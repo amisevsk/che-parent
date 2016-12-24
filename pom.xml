@@ -824,6 +824,17 @@
                             <exclude>**/jmxremote.password</exclude>
                             <exclude>**/tomcat-users.xml</exclude>
                             <exclude>**/rewrite.config</exclude>
+                            <!-- Exclude files until #3281 is resolved -->
+                            <exclude>**/ServerEvaluationStrategyProvider.java</exclude>
+                            <exclude>**/ServerEvaluationStrategy.java</exclude>
+                            <exclude>**/ServerEvaluationStrategyTest.java</exclude>
+                            <exclude>**/DefaultServerEvaluationStrategy.java</exclude>
+                            <exclude>**/DefaultServerEvaluationStrategyTest.java</exclude>
+                            <exclude>**/LocalDockerServerEvaluationStrategy.java</exclude>
+                            <exclude>**/LocalDockerServerEvaluationStrategyTest.java</exclude>
+                            <exclude>**/DockerInstanceRuntimeInfo.java</exclude>
+                            <exclude>**/DockerInstanceRuntimeInfoTest.java</exclude>
+                            <!-- End excluded files -->
                         </excludes>
                         <headerDefinitions>
                             <headerDefinition>javadoc.xml</headerDefinition>
